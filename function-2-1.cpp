@@ -1,5 +1,5 @@
 //
-//  function-1-4.cpp
+//  function-2-1.cpp
 //  practical3
 //
 //  Created by Jordan Le on 19/8/2022.
@@ -10,12 +10,11 @@
 #include <stdlib.h>
 using namespace std;
 
-void copy_doubles(double *old_array,double *new_array,int length){
-  
-  double* ptr1 = old_array;
-  double* ptr2 = new_array;
+void multiples_of_seven(int *nums,int length){
   
   for (int i=0; i<length; i++){
-    *(ptr2 +i )= *(ptr1 + i);
+    if (*(nums+i)%7 == 0){
+      cout << *(nums+i) << endl;
+    }
   }
 }

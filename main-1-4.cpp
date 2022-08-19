@@ -17,4 +17,5 @@ int main(void){
   double array2[3];
   
   copy_doubles(array1, array2, 3);
+  cout << array2[0] << array2[1] << array2[2];
 }
