@@ -8,13 +8,14 @@
 #include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+using namespace std;
 
 void copy_integers(int old_array[],int new_array[],int length){
   
-  int* ptr = &old_array[0];
+  int* ptr1 = old_array;
+  int* ptr2 = new_array;
   
   for (int i=0; i<length; i++){
-    ptr = &old_array[i];
-    new_array[i] = *ptr;
+    *(ptr2 +i )= *(ptr1 + i);
   }
 }
