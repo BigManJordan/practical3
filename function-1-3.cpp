@@ -12,5 +12,9 @@
 void copy_integers(int old_array[],int new_array[],int length){
   
   int* ptr = &old_array[0];
-  new_array = ptr;
+  
+  for (int i=0; i<length; i++){
+    ptr = &old_array[i];
+    new_array[i] = *ptr;
+  }
 }

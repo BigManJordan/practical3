@@ -14,7 +14,7 @@ extern void copy_integers(int old_array[],int new_array[],int length);
 int main(void){
   
   int array1[3]={1,2,3};
-  int array2[sizeof(array1)/sizeof(int)];
+  int array2[3];
   
   copy_integers(array1, array2, 3);
 }
